@@ -1,0 +1,35 @@
+@import "./mixin.scss";
+.header-right-img {
+    width: auto;
+    height: 100px;
+}
+
+.header-set {
+    display: flex;
+    height: 100px;
+    width: 100%;
+}
+
+// @include flex-center;
+.header-right {
+    @include flex-center;
+}
+
+.header-left {
+    @include flex-center;
+    margin: auto 0;
+    margin-left: auto;
+}
+
+.avator-icon {
+    margin-right: 10px;
+}
+
+.span-title-marign {
+    margin-left: 10px;
+}
+
+.collapse-style {
+    cursor: pointer;
+    color: turquoise;
+}

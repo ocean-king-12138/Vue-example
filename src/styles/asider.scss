@@ -1,0 +1,16 @@
+.sider {
+    position: absolute;
+    display: block;
+    top: 100px;
+    left: 0;
+    bottom: 0;
+    user-select: none;
+}
+
+.sider>ul {
+    height: 100%;
+}
+
+.sider-el-menu:not(.el-menu--collapse) {
+    width: 250px;
+}

@@ -1,0 +1,27 @@
+.tags {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 50px;
+    line-height: 50px;
+    width: 100%;
+    box-shadow: -3px 0 15px 3px rgba(0, 0, 0, 0.2);
+}
+
+.tags-ul-li {
+    display: inline-block;
+    width: auto;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #666;
+    border-radius: 5%;
+    margin: 5px 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+    -webkit-transition: all 0.3s ease-in;
+}
+
+.tags-ul-li-active {
+    background-color: #409eff;
+    border: 1px solid #409eff;
+}
