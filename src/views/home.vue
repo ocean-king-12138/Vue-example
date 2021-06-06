@@ -7,9 +7,7 @@
     <Tags></Tags>
     <hr />
     <router-view v-slot="{ Component }">
-      <transition name="fade">
-        <component :is="Component"></component>
-      </transition>
+      <component :is="Component"></component>
     </router-view>
     <el-divider class="footer">联系我</el-divider>
   </div>

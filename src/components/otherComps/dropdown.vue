@@ -9,6 +9,7 @@
         width: widthNum + 'px',
       }"
       @click="showList"
+      @blur="showList"
       :value="inputValue"
     />
     <div class="ul-box">
@@ -31,11 +32,11 @@
     </div>
   </div>
   <transition name="fade">
-    <div class="mask" v-show="isShow"></div>
+    <div ref="mask" data-id="12138" class="mask" v-show="isShow"></div>
   </transition>
 </template>
 <script lang="ts">
-import { defineComponent, ref } from "vue";
+import { defineComponent, onMounted, ref } from "vue";
 export default defineComponent({
   name: "DropDown",
   props: {
@@ -70,6 +71,7 @@ export default defineComponent({
       dropDownLists: props.dropDownLists,
       isShow: ref(false),
       inputValue: ref(""),
+      mask: ref(null),
     };
     const meoths = {
       showList: () => {
@@ -80,6 +82,9 @@ export default defineComponent({
         styleDrop.inputValue.value = item.text;
       },
     };
+    // onMounted(() => {
+    //   //console.log(styleDrop.mask.value.dataset);
+    // });
 
     return {
       ...styleDrop,
